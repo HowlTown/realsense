@@ -4,10 +4,10 @@ import numpy as np
 # 读取PLY文件
 #pcd = o3d.io.read_point_cloud('data_0912\point_clouds\point_cloud_20230912_0000.pcd')
 #pcd = o3d.io.read_point_cloud('1.ply')
-pcd = o3d.io.read_point_cloud('outnew.ply')
+pcd = o3d.io.read_point_cloud('outnew.pcd')
 
 # 翻转点云，使其正确显示
-#pcd.transform([[1, 0, 0, 0], [0, -1, 0, 0], [0, 0, -1, 0], [0, 0, 0, 1]])
+pcd.transform([[1, 0, 0, 0], [0, -1, 0, 0], [0, 0, -1, 0], [0, 0, 0, 1]])
 
 
 # 计算每个点到原点的距离
